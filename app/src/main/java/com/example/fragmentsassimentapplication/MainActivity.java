@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             int id = item.getItemId();
             if (id == R.id.eventsFragment) setCurrentFragment(eventsFragment, true);
             else if (id == R.id.galleryFragment) setCurrentFragment(galleryFragment, true);
-            elsلe if (id == R.id.newsFragment) setCurrentFragment(newsFragment, true);
+            else if (id == R.id.newsFragment) setCurrentFragment(newsFragment, true);
             else if (id == R.id.placesFragment) setCurrentFragment(placesFragment, true);
             return true;
         });
