@@ -66,8 +66,10 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
 
-      - name: Build debug APK
-        run: ./gradlew assembleDebug
+      - name: Build APK
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug
 
       - name: Upload generated APK
         uses: actions/upload-artifact@v4
